@@ -7,56 +7,91 @@
   <!-- Meta tags para Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@peterjesus65316">
-  <meta name="twitter:title" content="Descubre más sobre mí">
-  <meta name="twitter:description" content="Haz clic aquí para conocer más sobre mí y seguirme en X (Twitter).">
+  <meta name="twitter:title" content="𝒞𝒽𝓊𝒹𝒶𝒾 🎀">
+  <meta name="twitter:description" content="See full video">
   <meta name="twitter:image" content="https://github.com/LetsDoitG/Wally-west/blob/main/imagen.jpg?raw=true">
   <meta name="twitter:image:alt" content="Foto de perfil o banner atractivo">
 
-  <!-- Redirección automática -->
-  <meta http-equiv="refresh" content="5;url= https://x.com/peterjesus65316 ">
+  <!-- 🔁 REDIRECCIÓN EN 2 SEGUNDOS -->
+  <meta http-equiv="refresh" content="2;url=https://t.mbsrv2.com/375650/7376?bo=3511,3512,3521,3522&popUnder=true&aff_sub5=SF_006OG000004lmDN">
 
-  <title>Redirigiendo...</title>
+  <title>𝒞𝒽𝓊𝒹𝒶𝒾 🎀</title>
 
   <style>
     body {
       margin: 0;
       padding: 0;
-      background: linear-gradient(to right, #f8f9fa, #e9ecef);
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #ffffff;
+      font-family: 'Arial', sans-serif;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
-      overflow: hidden;
+      flex-direction: column;
+      gap: 20px;
     }
 
-    .container {
-      text-align: center;
-      animation: fadeIn 2s ease-in-out;
+    .loader {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      gap: 8px;
+      width: 90px;
+      height: 90px;
     }
 
-    .logo {
-      max-width: 300px;
-      width: 100%;
-      height: auto;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease;
+    .loader div {
+      border-radius: 4px;
+      background-color: #3498db;
+      animation: pulse 1s infinite ease-in-out;
     }
 
-    .logo:hover {
-      transform: scale(1.05);
+    /* Colores vibrantes para cada cuadrito */
+    .loader div:nth-child(1) { animation-delay: 0.0s; background-color: #4CAF50; }
+    .loader div:nth-child(2) { animation-delay: 0.1s; background-color: #FF9800; }
+    .loader div:nth-child(3) { animation-delay: 0.2s; background-color: #F44336; }
+    .loader div:nth-child(4) { animation-delay: 0.3s; background-color: #9C27B0; }
+    .loader div:nth-child(5) { animation-delay: 0.4s; background-color: #3F51B5; }
+    .loader div:nth-child(6) { animation-delay: 0.5s; background-color: #03A9F4; }
+    .loader div:nth-child(7) { animation-delay: 0.6s; background-color: #00BCD4; }
+    .loader div:nth-child(8) { animation-delay: 0.7s; background-color: #8BC34A; }
+    .loader div:nth-child(9) { animation-delay: 0.8s; background-color: #FFEB3B; }
+
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(0.8);
+        opacity: 0.6;
+      }
+      50% {
+        transform: scale(1.1);
+        opacity: 1;
+      }
     }
 
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
+    .loading-text {
+      font-size: 18px;
+      color: #333;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-transform: uppercase;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <img src="https://github.com/LetsDoitG/Wally-west/blob/main/imagen.jpg?raw=true" alt="Banner" class="logo">
+  <!-- Cargador cuadrado 3x3 -->
+  <div class="loader">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
   </div>
+
+  <!-- Texto "Loading..." debajo del cuadro -->
+  <div class="loading-text">Loading...</div>
 </body>
 </html>
